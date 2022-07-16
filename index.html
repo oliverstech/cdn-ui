@@ -47,18 +47,18 @@
 </head>
 <body>
 <div class="dropdown">
-  <button onclick="CategoryFunction()" class="dropbtn">Dropdown</button>
-  <div id="CategoryDropdown" class="dropdown-content">
-    <a href="os">OSes</a>
-    <a href="software">Software</a>
+  <button onclick="Execute()" class="dropbtn">Dropdown</button>
+  <div id="Dropdown" class="dropdown-content">
+    <a onclick="ShowOS()">OSes</a>
+    <a href="ShowSoftware()">Software</a>
   </div>
 </div>
 
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function CategoryFunction() {
-  document.getElementById("CategoryDropdown").classList.toggle("show");
+function Execute() {
+  document.getElementById("Dropdown").classList.toggle("show");
 }
 
 // Close the dropdown if the user clicks outside of it
